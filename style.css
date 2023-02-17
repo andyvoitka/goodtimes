@@ -1,0 +1,104 @@
+
+@font-face {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+body
+
+span.stretch {
+  background-size: 100%;
+  background-position: center;
+  position: center;
+        display: block;
+        margin: 450px;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(10, 90);
+      }
+span.description {
+  background-size: 100%;
+  background-position: center;
+  position: center;
+        display: block;
+        margin: 1000px;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(0.97, 2);
+      }
+
+.flex-container {
+  display: flex;
+  height: 700px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container.description {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: top;
+}
+
+
+
+/* Page structure */
+.image-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.image-wrapper.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+*/
+.dipped {
+  transform: translateY(5px);
+}
