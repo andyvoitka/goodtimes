@@ -11,42 +11,52 @@ span.stretch {
   background-position: center;
   position: center;
         display: block;
-        margin: 450px;
+        margin: 526px;
         -webkit-transform: scale(1, 1);
         -moz-transform: scale(1, 1);
         -o-transform: scale(1, 1);
-        transform: scale(10, 90);
+        transform: scale(10, 107);
       }
+
+
+
+
+
+
 span.description {
-  background-size: 100%;
+  background-size: 80%;
   background-position: center;
   position: center;
         display: block;
         margin: 1000px;
         -webkit-transform: scale(1, 1);
         -moz-transform: scale(1, 1);
-        -o-transform: scale(1, 1);
+        -o-transform: scale(0.1, 1);
+        transform: scale(0.97, 2);
+      }
+
+span.arrows{
+  background-size: 80%;
+  background-position: center;
+  position: center;
+        display: block;
+        margin: 10px;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(0.1, 1);
         transform: scale(0.97, 2);
       }
 
 .flex-container {
   display: flex;
   height: 700px;
-  width: 200px;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-.flex-container.description {
-  display: flex;
-  height: 200px;
-  justify-content: center;
-  align-items: top;
-}
 
 
-
-/* Page structure */
 .image-wrapper {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -75,7 +85,7 @@ span.description {
 
 
 
-/* Button - Add it from the README instructions */
+
 button,
 input {
   font-family: inherit;
@@ -88,17 +98,3 @@ input {
   transition: 500ms;
 }
 
-
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
-}
